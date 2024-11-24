@@ -1,0 +1,170 @@
+.user-view-ceckout {
+  padding: 20px;
+  margin-top: 12px;
+}
+.edit-btn {
+  margin-left: 180px;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+.order-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  max-height: 90px;
+}
+.foodcontainer{
+  width: 250px;
+}
+
+
+.qty-btn {
+  border: 1px solid rgb(243, 205, 135);
+  border-radius: 90px;
+}
+.qty-btn:hover,
+.qty-btn:focus {
+  background-color: orange;
+}
+
+.mobile-checkout {
+  display: none;
+}
+@media screen and (max-width: 799px) {
+  .user-view-ceckout {
+    display: none !important;
+  }
+  .foodcontainer{
+    width: auto;
+  }
+  
+  .mobile-checkout {
+    display: block !important;
+    padding: 20px 10px;
+  }
+
+  .verticle{
+    height: 130px;
+    width: 2px;
+    margin: 0 20px;
+    border: 1px dashed orangered;
+}
+  .symbol{
+    background-color: orangered;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    width: 20px;
+    height: 20px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.chekout-p-name{
+    font-size: 16px;
+    font-weight: 600;
+}
+.non-veg{
+    width: 10px;
+    height: 8px;
+    border-radius: 50%;
+    background: red;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+    margin: 8px 0;
+}
+.add-address-text{
+    color: orangered;
+    font-size: 16px;
+    font-weight: 600;
+}
+.add-icon{
+    border: 1px solid orangered;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 8px;
+    color: orangered;
+}
+
+.tower-img{
+  width: auto;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  /* margin: auto; */
+  height: 70px;
+  margin: 6px auto;
+}
+.tower-charge{
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+.delivery-type{
+  font-size: 14px;
+  font-weight: 600;
+  color: orangered;
+  text-align: center;
+}
+
+.select-container {
+  position: relative;
+  width: 100%;
+}
+
+#slot-select {
+  width: 100%;
+  padding: 8px 40px;
+  font-size: 16px;
+  background-image: url('../../public/Assets/time.png'); 
+  background-repeat: no-repeat;
+  background-position: left 10px center;
+  background-size: 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: orangered;
+  color: white;
+  border: 1px solid white;
+}
+
+#slot-select option {
+  padding-left: 30px; /* To add space between text and icon */
+}
+
+.delivr-location{
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  align-items: center;
+  margin: auto;
+}
+.selection-tab{
+  background-color: transparent;
+  height: 135px;
+  /* border: 1px solid orange; */
+  border-radius: 9px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.3s, background-color 0.3s;
+  position: relative;
+  padding: 0px;
+  cursor: pointer;
+}
+.selection-tab.active {
+  border-color: orangered;
+  background-color: #fff5f5;
+  padding: 0px;
+  /* border: 1px solid orange; */
+}
+}

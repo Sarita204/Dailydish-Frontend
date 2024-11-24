@@ -1,0 +1,156 @@
+.delivery-status {
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.status-title {
+  color: #e74c3c;
+  margin-bottom: 10px;
+}
+
+.status-container {
+  display: flex;
+  align-items: center;
+}
+
+.status-step {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.circle {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #f0f0f0;
+  color: white;
+  font-size: 14px;
+}
+
+.completed .circle {
+  background-color: #4caf50;
+  border-color: #4caf50;
+}
+
+.pending {
+  background-color: #999;
+  border-color: #999;
+}
+
+.status-label {
+  font-size: 14px;
+  color: #333;
+  margin: 10px -8px;
+}
+
+.completed .status-label {
+  color: #4caf50;
+}
+
+.line {
+  width: 100px;
+  height: 2px;
+  background-color: #f0f0f0;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+.completed .line {
+  background-color: #4caf50;
+}
+
+.orderspage-img {
+  width: 100px;
+  height: 80px;
+}
+
+.order-card {
+  background-color: white;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px 0;
+  width: fit-content;
+}
+
+.bike {
+  width: 100px;
+  height: auto;
+  margin: 20px 0;
+}
+
+.road {
+  width: 400px;
+  height: 2px;
+  background-color: gray;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  position: relative;
+  bottom: -115px;
+}
+
+.rating-img {
+  width: 100%;
+  height: 25px;
+}
+
+.mobile-view-orderlist {
+  display: none !important;
+}
+
+@media screen and (max-width: 799px) {
+  .road {
+    width: 200px;
+    position: relative;
+    bottom: -100px;
+
+  }
+  
+.bike {
+  width: 150px;
+  height: auto;
+  margin: 20px 0;
+}
+  .line {
+    width: 70px;
+  }
+  .web-screen {
+    display: none !important;
+  }
+
+  .mobile-view-orderlist {
+    display: block !important;
+    padding: 10px;
+  }
+
+  .my-order-first-tab {
+    display: flex;
+    gap: 10px;
+    border: 1px solid orangered;
+    padding: 10px;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #34b934;
+    width: 100%;
+    margin: 10px 0;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+  .mbl-line{
+    width: 65px;
+    height: 2px;
+    background-color: #f0f0f0;
+    margin-left: 4px;
+    margin-right: 4px;
+  }
+  .completed .mbl-line {
+    background-color: #4caf50;
+  }
+}

@@ -1,0 +1,223 @@
+.banner-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.homebanner {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.content-container {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+  width: 40%;
+  text-align: center;
+  color: #fff;
+}
+
+.banner-title {
+  font-size: 45px;
+  margin-bottom: 10px;
+  font-family: cursive, ui-sans-serif;
+  text-align: left;
+  color: orangered;
+}
+
+.banner-tagline {
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-weight: 300;
+  text-align: left;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+}
+
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 50px;
+  padding: 5px 15px;
+  width: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.location-icon {
+  color: orangered;
+  font-size: 20px;
+}
+
+.search-input {
+  border: none;
+  outline: none;
+  flex-grow: 1;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 50px;
+  background: none;
+}
+
+.search-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: orangered;
+  font-size: 18px;
+  padding: 5px;
+}
+
+.mobile-banner {
+  display: none !important;
+}
+@media screen and (max-width: 799px) {
+  /* .homebanner {
+    width: 100%;
+    height: 300px !important;
+    object-fit: cover;
+    padding: 10px;
+  }
+  .banner-title {
+    font-size: 30px !important;
+  }
+  .banner-tagline {
+    font-size: 18px !important;
+  }
+  .content-container {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    width: 70% !important;
+  } */
+
+  .banner-container {
+    display: none;
+  }
+
+  .mobile-banner {
+    display: block !important;
+    padding: 16px;
+  }
+
+  .screen-2 {
+    background: linear-gradient(180deg, #de4208, #f68a3c);
+    padding: 20px;
+    height: 100%;
+    border-radius: 10px;
+  }
+  .mobile-user-screen2 {
+    width: 50px;
+    border-radius: 50%;
+    color: white;
+    border: 1px solid white;
+    height: 50px;
+    padding-top: 8px;
+  }
+  .mobile-user-screen2-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+  }
+  .mobile-user-screen2-tagline {
+    font-size: 16px;
+    color: white;
+  }
+  .mobile-user-status-icon {
+    width: 50px;
+    border-radius: 50%;
+    border: 2px solid  white; /* No border by default */
+    height: 50px;
+    padding: 5px;
+  }
+
+  .has-stories {
+    border: 2px solid #0b923c; 
+  }
+
+  .location-selector {
+    display: flex;
+    gap: 10px;
+  }
+  /* .search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 300px;
+    margin: auto;
+  }
+  
+  .search-input {
+    width: 100%;
+    padding: 10px 10px 10px 40px; 
+    border: 2px solid orangered;
+    font-size: 20px;
+    border-radius: 4px;
+  }
+  
+  .search-btn {
+    color: white;
+    pointer-events: none;
+    position: absolute;
+    left: 8px;
+    background-color: orangered;
+    border-radius: 50%;
+    align-items: center;
+    text-align: center;
+    text-align: center;
+    justify-content: center;
+}
+   */
+
+  .select-location {
+    outline-width: 0px;
+    border-radius: 5px;
+    width: 100% !important;
+    resize: none !important;
+    text-align: center;
+    margin: auto;
+  }
+
+  .select-location option {
+    color: orangered;
+    padding: 10px !important;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+    text-align: left;
+    font-size: 13px;
+  }
+
+  /* custom material ui css  */
+  .rs-picker-select-menu-item {
+    border: 1px solid orange;
+    border-radius: 10px;
+    margin: 5px 0 !important;
+    color: orangered !important;
+    font-weight: 600 !important;
+    font-size: 16px !important;
+  }
+  .rs-picker-select-menu-items {
+    padding: 10px !important;
+    width: 100% !important;
+  }
+  .rs-picker-default .rs-btn,
+  .rs-picker-default .rs-picker-toggle,
+  .rs-picker-input .rs-btn,
+  .rs-picker-input .rs-picker-toggle {
+    border: 2px solid orangered !important;
+  }
+  .rs-input-group {
+    border: 2px solid orangered !important;
+  }
+}

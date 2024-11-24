@@ -1,0 +1,110 @@
+/* Full-screen container for status view */
+.status-view {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Status header with progress indicators */
+.status-header {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+/* Progress bars */
+.progress-bar {
+  flex-grow: 1;
+  margin: 0 5px;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 2px;
+  position: relative;
+}
+
+.progress {
+  height: 100%;
+  background-color: white;
+  border-radius: 2px;
+  width: 0;
+}
+
+/* Status container */
+.status-container {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%; */
+}
+
+/* Image container */
+.image-container {
+  /* width: 100%;
+  height: 500px;
+  border: 1px solid white; */
+  /* display: flex; */
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+
+
+.status-image {
+  object-fit: cover;
+  border-radius: 40px;
+  width: 350px !important;
+  height: 500px;
+  padding: 20px;
+  transition: none; /* Remove any transitions */
+}
+
+/* Content area (icon, text, and timestamp) */
+.status-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 12px;
+  padding: 10px;
+  position: absolute;
+  bottom: 30px;
+  left: 20%;
+  width: 60%;
+  text-align: center;
+}
+
+.status-icon {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.status-text {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.timestamp {
+  font-size: 16px;
+  font-weight: bold;
+  color: red;
+}
+
+/* Mobile-friendly styles */
+@media (max-width: 768px) {
+ 
+}
